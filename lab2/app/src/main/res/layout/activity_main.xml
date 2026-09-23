@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <!-- 1. App Logo -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/images"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvOutput" />
+
+    <!-- 2. Output Label -->
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnMinus" />
+
+    <!-- 4. Subtract Button -->
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="-"
+        android:textSize="24sp"
+        android:backgroundTint="#2E7D32"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/tvOutput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnPlus"
+        app:layout_constraintBottom_toTopOf="@id/btnReset" />
+
+    <!-- 3. Add Button -->
+    <Button
+        android:id="@+id/btnPlus"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="+"
+        android:textSize="24sp"
+        android:backgroundTint="#2E7D32"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@id/btnMinus"
+        app:layout_constraintStart_toEndOf="@id/btnMinus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/btnMinus" />
+
+    <!-- 5. Reset Button -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Reset"
+        android:textSize="18sp"
+        android:backgroundTint="#E91E63"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/btnMinus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnStep"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- 6. Step Button -->
+    <Button
+        android:id="@+id/btnStep"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="Step"
+        android:textSize="18sp"
+        android:backgroundTint="#00E676"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@id/btnReset"
+        app:layout_constraintStart_toEndOf="@id/btnReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/btnReset" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
