@@ -25,3 +25,5 @@ dependencyResolutionManagement {
 rootProject.name = "lab1_hello_android"
 include(":app")
 include(":lab_ex_2")
+include(":app")
+ 

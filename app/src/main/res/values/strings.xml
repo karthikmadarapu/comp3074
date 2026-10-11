@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">lab1_hello_android</string>
     <string name="button_label">click me</string>
-    <string name = "initial_value"> Hello COMP3074 </string>
-    <string name = "click_value">It is Alive!</string>
+    <string name="initial_value"> Hello COMP3074 </string>
+    <string name="click_value">It is Alive!</string>
 
-    <string-array name = "values">
+    <string-array name="values">
         <item>Hello Comp 3074</item>
         <item> Some message</item>
         <item> It is Alive!</item>
