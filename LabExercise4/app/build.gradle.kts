@@ -5,14 +5,14 @@ plugins {
 }
 
 android {
-    namespace = "com.example.labexercise6"
+    namespace = "com.example.labexercise4"
 
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.labexercise6"
+        applicationId = "com.example.labexercise4"
         minSdk = 24
         targetSdk = 37
         versionCode = 1

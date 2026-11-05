@@ -1,0 +1,27 @@
+ARCHITECTURE:
+
+- Activites: These are created when user launches the app or clicks trun application. Activities also contain visible UI.
+
+- Services: Service should be used by those applications where they need to persist for long-term.
+
+- Content Providers: Act as an actual Database Servers.
+
+- Broadcast recievers: They might launched to process an element of data or responding to an event.
+
+
+
+[MVC, MVVM, MVI] - Model View Controller, Model View View Model, Model View Intent.
+
+MVC: Model talks to db's , view is all about the ui, Controller defines actual business logic and rules.
+
+MVVM : model contains data object where, it holds all the business logic rules and data. view is the presentation , and view model has presentation logic.
+
+MVI: MODEL VIEW INTENT :
+- Intent takes the activity from the user and passes the input state to the model, so that model can process the input state and load the state by passing it to the view which presents the actual Display (state) back to the user.
+
+
+Activites:
+
+- when an activity transitions into and out of different state , it is notified through callbacks and lifecycle methods.
+- callback methods are hooks.
+
